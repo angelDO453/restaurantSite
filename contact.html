@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!---------------------------------------------------
+Name: Angel D. Ortiz
+Date Created: 9/5/2018
+Most recent revision: 9/6/2018
+Description: contact.html - site used to show our talent in making html forms
+An example website used for the software guild
+course. The purpose of this website is to give us a foundation 
+on html coding without a .css file. 
+----------------------------------------------------->
+<html lang="en">
+<head>
+	<title>Contact Us</title>
+</head>
+
+
+<body>
+	<header>
+		<h1>Sizzling Hotdogs</h1>
+	</header>
+	
+	<nav>
+		<hr />
+			<p><a href="index.html">Home</a></p>
+			<p><a href="menu.html">Menu</a></p>
+			<p><a href="contact.html">Contact Us</a></p>
+		<hr />
+	</nav>
+	
+	<section>
+		<article id="contactMe">
+		<form action="submit.html" method="POST">
+			<label for="name">Name: </label><br />
+			<input type="text" id="name" name="name"><br />
+			<label for="email">Email: </label><br />
+			<input type="text" id="email" name="email"><br />
+			<label for="phone">Phone: </label><br />
+			<input type="text" id="phone" name="phone"><br />
+			<br />
+			
+			<select id="inquiry" name="inquiry">
+				<option value="catering" selected>Catering</option>
+				<option value="private">Private Party</option>
+				<option value="feedback">Feedback</option>
+				<option value="other">Other</option>
+			</select>
+			
+			<br />
+			<label for="info">Additional Infromation:</label><br />
+			<textarea id="info" name="info" rows="4" cols="50"></textarea>
+			<br />
+			
+			<fieldset>
+				<legend>Have you been to the restaurant?</legend><br />
+					<input type="radio" id ="choice1" name="history" value="yes">
+					<label for="choice1">Yes</label><br />
+				
+					<input type="radio" id ="choice2" name="history" value="no" checked>
+					<label for="choice2">No</label><br />
+			</fieldset>
+			
+			<br />
+			<fieldset>
+				<legend>Best days to contact you:</legend><br />
+					<input type="checkbox" id="monday" name="day" value="monday">
+					<label for="monday">M</label><br />
+					<input type="checkbox" id="tuesday" name="day" value="tuesday">
+					<label for="tuesday">T</label>
+					<input type="checkbox" id="wednesday" name="day" value="wednesday">
+					<label for="wednesday">W</label><br />
+					<input type="checkbox" id="thursday" name="day" value="thursday">
+					<label for="thursday">Th</label><br />
+					<input type="checkbox" id="friday" name="day" value="friday">
+					<label for="friday">F</label><br />
+			</fieldset>
+			
+			<br />
+				<input type="submit" name="submit" value="Send Request">
+		</form>
+		</article>
+	</section>
+	
+	<footer>
+		<hr />
+		<p> 603 Dream Dr., Dallas, Texas, 75123<br />
+			123-456-7890
+		</p>
+	</footer>
+</body>
+
+</html>
